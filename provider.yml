@@ -13,3 +13,6 @@ eureka:
 spring:
   application:
     name: provider
+
+env:
+  dev
