@@ -15,4 +15,4 @@ spring:
     name: provider
 
 env:
-  devQ
+  devDynamic
