@@ -22,6 +22,7 @@ spring:
       bindings:
         input:
           group: consumer
+          destination: StreamExchange
           content-type: application/json
   rabbitmq:
     username: guest
