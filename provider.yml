@@ -13,6 +13,12 @@ eureka:
 spring:
   application:
     name: provider
+  cloud:
+    stream:
+      bindings:
+        output:
+          group: provider
+          content-type: application/json
   rabbitmq:
     username: guest
     password: guest
