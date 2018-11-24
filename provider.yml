@@ -13,6 +13,11 @@ eureka:
 spring:
   application:
     name: provider
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
 
 env:
   devDynamic
