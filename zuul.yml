@@ -9,6 +9,4 @@ eureka:
 
 zuul:
   routes:
-    myRoute:
-      path: /myRoute/**
-      serviceId: provider
+    provider: /myRoute/**
