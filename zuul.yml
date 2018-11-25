@@ -12,4 +12,4 @@ zuul:
     provider: /myRoute/**
   ignored-patterns:
     - /provider/hello/payment
-    - /myRoute/hello/payment
+    #- /myRoute/hello/payment
