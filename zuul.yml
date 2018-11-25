@@ -10,3 +10,6 @@ eureka:
 zuul:
   routes:
     provider: /myRoute/**
+  ignored-patterns:
+    - /provider/hello/payment
+    - /myRoute/hello/payment
