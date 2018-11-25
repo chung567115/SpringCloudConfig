@@ -13,3 +13,4 @@ zuul:
   ignored-patterns:
     - /provider/hello/payment
     - /myRoute/hello/payment
+  sensitive-headers: 
