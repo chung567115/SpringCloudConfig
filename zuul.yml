@@ -6,3 +6,9 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
     #    hostname: ZuulName
+
+zuul:
+  routes:
+    myRoute:
+      path: /myRoute/**
+      serviceId: provider
