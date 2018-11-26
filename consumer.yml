@@ -32,3 +32,37 @@ spring:
 
 env: 
   dev
+
+feign:
+  client:
+    config:
+      default: #服务名，default为所有服务
+        connectTimeout: 3000
+        readTimeout: 5000
+  hystrix:
+    enabled: true #开启Feign熔断器
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    hello: #方法名，default为所有方法
+      execution:
+        timeout:
+          enable: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+      circuitBreaker:
+        enabled: true
+        requestVolumeThreshold: 10
+        sleepWindowInMilliseconds: 10000
+        errorThresholdPercentage: 50
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
