@@ -29,3 +29,6 @@ ribbon:
   ConnectTimeout: 3000
   SocketTimeout: 5000
   ReadTimeout: 5000
+
+env: 
+  dev
